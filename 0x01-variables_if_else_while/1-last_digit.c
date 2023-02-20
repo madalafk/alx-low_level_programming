@@ -1,14 +1,18 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+/* more headers goes there */
+/* betty style doc for function main goes there */
 /**
- * main – Entry point
+ * Function: Main - Entry point
  *
- * Description: Prints Rand number ,>5 ,<6 ,=0
+ * Description: Get a random number and print the number
+ * and if is positive, negative, or zero
  *
  * Return: Always 0 (success)
  */
 int main(void)
+/* main - Entry poit */
 {
 int n;
 srand(time(0));
