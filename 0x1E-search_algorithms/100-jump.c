@@ -1,4 +1,5 @@
 #include "search_algos.h"
+#include <math.h>
 
 /**
   * jump_search - Searches for a value in a sorted array
@@ -20,7 +21,7 @@ int jump_search(int *array, size_t size, int value)
 	if (array == NULL || size == 0)
 		return (-1);
 
-	k = sqrt(size);
+	k = (int)sqrt(size);
 	for (L = m = 0; m < size && array[m] < value;)
 	{
 		printf("Value checked array[%ld] = [%d]\n", m, array[m]);
